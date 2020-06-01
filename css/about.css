@@ -1,0 +1,83 @@
+.divBody{
+  background-color: white;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  width: 900px;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  margin-left: 15%;
+}
+
+.headerAbout{
+  padding-bottom: 10px;
+  margin-left: 5%;
+
+}
+.headerAbout img{
+  float: left ;
+}
+.headerAbout h1{  
+    text-align: left;
+    color:orange ;
+    text-shadow: 2px 2px black;
+    font-size: 50px;
+    }
+.headerAbout p{
+    text-align: left;
+    font-size: 22px;  
+    margin-top: -25px;
+  }
+  /* css for content */
+.contentAbout{
+    display: flex;
+    width: 850px;
+    height: 100%;
+    margin-left: 5%;
+    border-radius: 20px;
+  }
+.divRight{
+  padding-left: 15%;
+}
+.divLeft{
+  padding: 10px;
+} 
+.divLeft img:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); 
+}
+/* Menu for about page */
+
+.menuAbout{
+  height: 40px;
+  width: 800px;
+ 
+}
+.menuAbout a {
+  color: black;
+  float: left;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+.menuAbout a:hover{
+  color:white;
+  background-color:orange;
+}
+
+/* Css for Footer */
+.footerAbout{
+  margin-left: 23%;
+}
+.footerAbout p{
+  font-size: 25px;
+  }
+.footerAbout span{
+ float: left;
+ font-size: 25px;
+  }
+ 

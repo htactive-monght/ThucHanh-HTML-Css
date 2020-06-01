@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/contactForm.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="divContact">
+    <header class="headerContact">
+        <img src="images/logo.PNG" alt="logo" width="100" height="100">
+        <h1>San Joaquin Valley Town Hall </h1>
+        <p><b> Bringing cutting-edge speakers to the valley</b></p>
+      <div class="menuContact">
+        <a href="homepage.html"><b>Home</b></a>
+        <a href="about.html"><b>About</b></a>
+        <a href="contactForm.html"><b>Contact</b></a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="form">
+        <h1>Contact</h1>
+        <form method="post" action="">
+          <div class="icon">
+            <label><b>Full Name</b></label>
+            <input type="text" id="fname" name="fullname" placeholder="Please input your name.." required>
+
+            <label><b>Email</b></label>
+            <input type="email" id="emails" name="email" placeholder="Please input your email address .." required>
+
+            <label><b>Subject</b></label>
+            <input type="text" id="subjects" name="subject" placeholder=" What can we do to assist you?" required>
+
+          </div>
+          <label><b>message</b> </label>
+          <textarea id="message" name="messages" placeholder="Please let us know your idea"
+            style="height:200px"></textarea>
+        </form>
+        <button onclick="validateForm()">Submit</button>
+      </div>
+      <div class="divHT">
+        <h1>HT ACTIVE</h1>
+        <div>
+          <p><i class="fa fa-home"></i> 150 Du Tan, Danang, Vietnam</p>
+          <p><i class="fa fa-phone"></i>0905 610 228</p>
+          <p><i class="fa fa-skype"></i>hoangvhh</p>
+          <p><i class="fa fa-envelope"></i>recruit@htactive.com</p>
+        </div>
+        <div id="result">
+          <h3>Results </h3>
+          <!-- <form method="POST" action="">
+            <div class="icon">
+              <label><b>Full Name</b></label>
+              <input type="text" id="rname" name="rname" placeholder="Please input your name.." >
+
+              <label><b>Email</b></label>
+              <input type="email" id="remails" name="remails" placeholder="Please input your email address .." >
+
+              <label><b>Subject</b></label>
+              <input type="text" id="rsubjects" name="rsubjects" placeholder=" What can we do to assist you?" >
+
+            </div>
+            <label><b>message</b></label>
+            <textarea id="rmessage" name="messages" placeholder="Please let us know your idea"
+              style="height:200px"></textarea>
+          </form> -->
+          <b>Name: </b><p id="rname"></p>
+          <b>Email: </b><p id="remail"></p>
+          <b>Subject: </b> <p id="rsubject"></p>
+          <b>Message: </b><p id="rmessage"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+      function validateForm() {
+        var username = document.getElementById("fname").value;
+        var em = document.getElementById("emails").value;
+        var sj = document.getElementById("subjects").value;
+        var ms = document.getElementById("message").value;
+        console.log(username, em, sj, ms, '??????');
+        if (username == "" || em == "" || sj == "" || ms == "") {
+          alert("please enter your information");
+          // console.log("mong xấu gái"); 
+        }
+        // document.getElementById("rname").value = username;
+        // document.getElementById("remails").value = em;
+        // document.getElementById("rsubjects").value = sj;
+        // document.getElementById("rmessage").value = ms;
+
+        document.getElementById("rname").innerHTML = username;
+        document.getElementById("remail").innerHTML = em;
+        document.getElementById("rsubject").innerHTML = sj;
+        document.getElementById("rmessage").innerHTML = ms;
+        // document.getElementById("result").style.display = "block";
+
+
+      }
+    </script>
+</body>
+
+</html>

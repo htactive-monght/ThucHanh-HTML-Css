@@ -3,33 +3,44 @@ body{
   height: 100%;
   background: linear-gradient(white, #EED58E);
 }
-div{
+.div{
   background-color: white;
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
-  width: 750px;
+  width: 900px;
   height: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
-
   border-radius: 20px;
-  margin-left: 20%;
+  margin-left: 15%;
 }
   header{
-    margin-left: 52px;
+    padding-left: 52px;
+    padding-right: 60px;
   }
   header h1{
-    text-align: center;
+    text-align: left;
     color:orange ;
     text-shadow: 2px 2px black;
-  }
+    font-size: 46px;
+    }
   header img{
     float: left ;
   }
   header p{
     text-align: center;
+    font-size: 22px;
+  }
+  .transition{
+  width: 100%;
+  height: 10px;
+  background: red;
+  transition: width 3s;
+  }
+  .transition header div:hover{
+    width: 300px;
   }
   hr{
    width:90%;
@@ -38,20 +49,33 @@ div{
   }
   main{
     margin-left: 52px;
+    margin-right: 20px;
+  }
+  main h2{
+    font-size: 40px;
+  }
+  main ul li{
+    font-size: 25px;
   }
   main a:hover{
   color: red;
   }
-  /* main a:link {
-   color: green;
-} */
+  main h3{
+    font-size: 35px;
+  }
+  main p{
+    font-size: 25px;
+  }
   footer{
-    margin-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 15%;
+    display: flex;
   }
   footer p{
-    float: right;
-  }
+    font-size: 25px;
+    }
   footer span{
-   margin-left:58%;
-   font-size:15px;
-  }
+   font-size: 25px;
+    }
+   
+  

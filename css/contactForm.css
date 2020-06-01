@@ -1,0 +1,89 @@
+.divContact{
+  background-color: white;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  width: 900px;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  margin-left: 15%;
+}
+
+.headerContact{
+  padding-bottom: 10px;
+  margin-left: 5%;
+}
+.headerContact h1{  
+    text-align: left;
+    color:orange ;
+    text-shadow: 2px 2px black;
+    font-size: 50px;
+    padding-left: 10px;
+    }
+.headerContact img{
+    float: left;
+  }
+.headerContact p{
+    text-align: left;
+    font-size: 22px;  
+    margin-top: -25px;
+  }
+/* ccss for form */
+
+.form{
+  width: 50%;
+  padding-left: 10px;
+}
+.content {
+  display: flex;
+  width: 800px;
+  height: 100%;
+  margin-left: 5%;
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+input[type=text], input[type=email], textarea {
+  width: 300px;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+}
+.divHT{
+  padding-left: 7%;
+}
+#result b{
+float: left;
+}
+
+/* menu for contact form */
+header{
+  padding-bottom: 10px;
+  margin-left: 17%;
+}
+.menuContact{
+  height: 40px;
+  width: 800px;
+}
+.menuContact a {
+  color: black;
+  float: left;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.menuContact a:hover{
+  color:white;
+  background-color:orange;
+}
